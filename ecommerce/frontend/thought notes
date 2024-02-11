@@ -1,0 +1,97 @@
+some usfull extension i Dowloaded while doing this project:-
+-----------------------------------------------------------
+es7+react/redux/react-native snippets
+auto close tag
+auto import tag
+dotenv
+html to jsx
+
+====================================================================================================================
+====================================================================================================================
+
+B A C K E N D :-
+--------------
+Here first, I make a directory name "backend" then  server.js with different folder likes:- 
+
+1) controllers:- 
+--------------
+admin, 
+user,
+2) models:- 
+---------
+order, 
+products, 
+custumer,
+cart,
+category, 
+3) middleware:-
+--------------
+ auth for login checking... Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle. The next function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware.
+
+4) routes:- 
+---------
+user, 
+admin, 
+
+*********************************************************************************
+
+
+then, I install some packages:-
+-----------------------------
+1) "bcryptjs": bcryptjs is a JavaScript library used primarily for hashing passwords. It employs the bcrypt hashing algorithm to securely hash passwords, making them difficult to reverse engineer or decrypt.
+
+2) "cors": cors (Cross-Origin Resource Sharing) is a node.js package used to enable CORS in a Node.js Express application. CORS is a security feature implemented in web browsers that controls access to resources from different origins. It allows or restricts cross-origin HTTP requests, helping to prevent cross-site request forgery and other security issues.
+
+3) "express":Express is a popular web application framework for Node.js. It simplifies the process of building web applications and APIs by providing a robust set of features and tools. Here's a basic example demonstrating how Express might be used to create a simple server:
+
+4) "jsonwebtoken":jsonwebtoken is a popular library used in Node.js to generate and verify JSON Web Tokens (JWTs). JWTs are a compact, URL-safe means of representing claims to be transferred between two parties. They are commonly used for authentication and information exchange in web development.
+
+5) "mongoose":Mongoose is a popular Object Data Modeling (ODM) library for Node.js and MongoDB. It provides a straightforward schema-based solution to model your application data and interact with MongoDB databases.
+
+6) "nodemon":nodemon is a utility for Node.js that monitors changes in your Node.js application files and automatically restarts the server when changes are detected. It's particularly useful during the development phase as it saves you from manually stopping and restarting the server every time you make changes to your code.
+
+
+
+====================================================================================================================
+====================================================================================================================
+====================================================================================================================
+====================================================================================================================
+
+F R O N T E N D :-
+----------------
+
+1) Starting with frontend create react app :- by running the command npx create-react-app ecomm then deleteed the logos and create some folders like pages, components, images.
+
+2) after that I write the hello world in app.js and remove all the other code of app.js app.css and index.css.
+
+3) then I installed some pakages like:-
+ i) bootstrap;- Bootstrap is a popular front-end framework that provides pre-designed components and styles, facilitating the development of responsive and visually appealing web applications with HTML, CSS, and JavaScript.
+
+ ii) react bootstrap:- React Bootstrap is a library integrating Bootstrap components into React applications. It allows seamless integration of Bootstrap's UI elements within React projects, leveraging the power of both technologies.
+
+ iii) react-router-dom:-React Router Dom is a library for declarative routing in React applications. It enables navigation and URL management, allowing developers to create dynamic, multi-page React applications with distinct views.
+
+ iv) sweetalert2:- SweetAlert2 is a JavaScript library for creating beautiful and customizable popup modals. It enhances user experience by providing aesthetically pleasing and feature-rich alerts, prompts, and confirmations in web applications.
+
+ v) @fortawesome/fontawesome-svg-core, @fortawesome/free-solid-svg-icons, @fortawesome/react-fontawesome like in assignment 6 of of backend.
+
+4) here I used same code from assignment 6 like home page, what I made there i used the here too.
+
+5) Now then I made diffrent components and pages like home page, login page, signup page, etc and same components homecover components, login components, signup components etc and give the name to function like LoginCom, SignupCom, AboutCom, etc respectivily.
+
+6) define its route by using router-dom in app.js, and gave href value in header so that by clicking we can go to different pages.
+
+7) I made UI for login and signuppage by help of bootstrap and recorded videos present in internshala recorded classes.
+
+8) then I made UI for about page, contact page by the help pf bootstrap.
+
+******************************************************************************
+
+pages discription:-
+------------------
+1) login page:-
+2) register page:-
+3) profile page:-
+4) product page:-
+5) cart page:-
+6) rest:- there I just disign the frame not put any functionality and integration part  

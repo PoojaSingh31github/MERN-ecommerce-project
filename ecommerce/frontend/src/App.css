@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+
+}
+.custom {
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+  margin: 10px auto;
+  height: 40px;
+}
+.slider2{
+  height: 450px;
+  /* width: 50px; */
+}
+.slider-image{
+  height: 270px;
+  width: 250px;
+}
+.font-design{
+  font-family: 'Sevillana', cursive;
+  letter-spacing: 4px;
+  font-weight: 500;
+  text-shadow: 3px 2px #bcd7ec;
+}
+.slide-img{
+  height: 600px;
+  width: 100%;
+}
+.card{
+  padding: 15px;
+}
+.card-img{
+  height: 350px;
+}
