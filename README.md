@@ -9,7 +9,7 @@ This repository contains a fully functional e-commerce platform built using the 
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Folder Structure](#folder-structure)
-- [API Endpoints](#api-endpoints)
+- [API Documentation](#API-Documentation)
 - [Frontend Overview](#frontend-overview)
 - [Contributing](#contributing)
 - [License](#license)
