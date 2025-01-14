@@ -98,6 +98,95 @@ This project aims to provide an e-commerce solution with features like product b
     └── README.md              # Project documentation
 
     ```
-### Installation
-### Installation
-### Installation
+
+### API Documentation
+
+## User APIs
+
+| HTTP Method | Endpoint                   | Description           | Request Body                          |
+|-------------|----------------------------|-----------------------|---------------------------------------|
+| POST        | `/api/users/register`      | Register a new user   | `{ "name": "John Doe", "email": "john.doe@example.com", "password": "securePassword123" }` |
+| POST        | `/api/users/login`         | Log in a user         | `{ "email": "john.doe@example.com", "password": "securePassword123" }` |
+| GET         | `/api/users/profile`       | Get user profile      | -                                     |
+| PUT         | `/api/users/profile`       | Update user profile   | `{ "name": "John Doe", "email": "john.doe@example.com" }` |
+| DELETE      | `/api/users/delete/:id`    | Delete user by ID     | -                                     |
+
+## Product APIs
+
+| HTTP Method | Endpoint                          | Description             | Request Body                                                                                   |
+|-------------|-----------------------------------|-------------------------|------------------------------------------------------------------------------------------------|
+| POST        | `/api/products/create`            | Create a new product    | `{ "title": "Sample Product", "description": "This is a sample product.", "price": 99.99, "category": "Category Name", "stock": 50, "brand": "Brand Name" }` |
+| GET         | `/api/products`                   | Get all products        | -                                                                                              |
+| GET         | `/api/products/:id`               | Get product by ID       | -                                                                                              |
+| PUT         | `/api/products/update/:id`        | Update product by ID    | `{ "title": "Updated Product", "description": "Updated description.", "price": 89.99 }`        |
+| DELETE      | `/api/products/delete/:id`        | Delete product by ID    | -                                                                                              |
+| POST        | `/api/products/:id/reviews`       | Add review to product   | `{ "rating": 5, "comment": "Great product!" }`                                                 |
+| GET         | `/api/products/:id/reviews`       | Get reviews for product | -                                                                                              |
+
+## Order APIs
+
+| HTTP Method | Endpoint                   | Description           | Request Body                                                                                   |
+|-------------|----------------------------|-----------------------|------------------------------------------------------------------------------------------------|
+| POST        | `/api/orders`              | Create a new order    | `{ "orderItems": [{ "productId": "123", "quantity": 2 }], "shippingAddress": { "address": "123 Street", "city": "City", "postalCode": "12345", "country": "Country" }, "paymentMethod": "PayPal" }` |
+| GET         | `/api/orders/:id`          | Get order details by ID | -                                                                                              |
+| GET         | `/api/orders/myorders`     | Get user orders       | -                                                                                              |
+| PUT         | `/api/orders/:id/pay`      | Update order as paid  | `{ "paymentResult": { "id": "paymentId", "status": "Completed", "update_time": "2024-01-01T00:00:00Z", "email_address": "user@example.com" } }` |
+| PUT         | `/api/orders/:id/deliver`  | Update order as delivered | -                                                                                              |
+
+## Category APIs
+
+| HTTP Method | Endpoint                          | Description               | Request Body                             |
+|-------------|-----------------------------------|---------------------------|------------------------------------------|
+| POST        | `/api/categories/create`          | Create a new category     | `{ "name": "Electronics" }`              |
+| GET         | `/api/categories`                 | Get all categories        | -                                        |
+| GET         | `/api/categories/:id`             | Get category by ID        | -                                        |
+| PUT         | `/api/categories/update/:id`      | Update category by ID     | `{ "name": "Updated Category Name" }`    |
+| DELETE      | `/api/categories/delete/:id`      | Delete category by ID     | -                                        |
+
+## Cart APIs
+
+| HTTP Method | Endpoint                    | Description              | Request Body                           |
+|-------------|-----------------------------|--------------------------|----------------------------------------|
+| POST        | `/api/cart/add`             | Add item to cart         | `{ "productId": "123", "quantity": 2 }` |
+| GET         | `/api/cart`                 | Get cart items           | -                                      |
+| PUT         | `/api/cart/update/:id`      | Update cart item quantity| `{ "quantity": 3 }`                    |
+| DELETE      | `/api/cart/remove/:id`      | Remove item from cart    | -                                      |
+
+---
+
+### Frontend Overview
+
+The frontend of this project is built using **React.js** with **Redux** for state management. It includes the following features:
+
+### Pages and Features
+- **Home Page**: Displays a list of featured products for users to explore.
+- **Product Details Page**: Provides a detailed view of an individual product, including its specifications and reviews.
+- **Cart Page**: Allows users to view, add, update, or remove items from their cart.
+- **Checkout Page**: Enables users to place an order and complete the purchase process.
+- **Admin Dashboard**: Grants administrators the ability to manage all aspects of the application, including users, products, orders, and other configurations.
+
+---
+
+### Contributing
+
+Contributions are welcome! Here's how you can contribute to this project:
+
+1. Fork this repository.
+2. Create a new branch:  
+   ```bash
+   git checkout -b your-feature-branch
+   ```
+3. Make your changes and commit them:
+   
+```bash
+Copy code
+git commit -m "Description of your feature or fix"
+```
+
+4. Push your changes to your forked repository:
+```bash
+Copy code
+git push origin your-feature-branch
+```
+5. Submit a pull request detailing the changes you made.   
+
